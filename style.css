@@ -8,11 +8,49 @@ html{
   scroll-behavior: smooth;
 }
 
+div {
+  width: 50%; /* or any desired width */
+  margin: 0 auto; /* this centers the div horizontally */
+}
+
 body{
+
+  opacity: 0; /* Start with content hidden */
+  animation: fadeIn 5s ease forwards; /* Apply fade-in animation */
+
   background: #D694E0;
   color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Fade from transparent */
+  }
+  to {
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+.content {
+  /* Your content styles */
+  text-align: center;
+  padding: 20px;
+}
+
+.logo{
+  display: inline-block;
+}
+
+.logo img{
+  display: block;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin: auto;
+  border-radius: 10%;
 }
 
 .brand{
   color: black;
 }
+
+
